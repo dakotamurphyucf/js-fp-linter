@@ -55,7 +55,6 @@ Then configure the rules you want to use under the rules section.
 - [no-nil](docs/rules/no-nil.md) - Forbid the use of `null` and `undefined`.
 - [no-proxy](docs/rules/no-proxy.md) - Forbid the use of `Proxy`.
 - [no-rest-parameters](docs/rules/no-rest-parameters.md) - Forbid the use of rest parameters.
-- [no-unused-expression](docs/rules/no-unused-expression.md) - Enforce that an expression gets used.
 - [no-variable-declarations](docs/rules/no-variable-declarations.md) - Forbids variable declarations, no `var` or `let`.
 <!-- RULES:END -->
 ## Recommended configuration
@@ -69,7 +68,7 @@ To enable this configuration, use the `extends` property in your `package.json`.
   "name": "my-awesome-project",
   "eslintConfig": {
     "plugins": [
-      "fp"
+      "js-fp-linter"
     ],
     "extends": "plugin:js-fp-linter/recommended"
   }
