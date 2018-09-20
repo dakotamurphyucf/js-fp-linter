@@ -5,18 +5,23 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "functional programing",
+    "javascript fp linter"
   ],
   "author": "Dakota Murphy",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "update-md": "inject-in-tag ./rule-description.js README.md"
   },
   "dependencies": {
+    "create-eslint-index": "^1.0.0",
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
     "eslint": "~3.9.1",
+    "inject-in-tag": "^1.1.1",
     "mocha": "^3.1.2"
   },
   "engines": {
